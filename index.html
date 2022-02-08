@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>Kevin Perdomo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Hola mundo!</h1>
-        <h2>Hoja de vida</h2>
+        <header>
+            <section id="foto-perfil">
+                <!-- Foto de perfil -->
+                <h1>Aqui va la foto de perfil</h1>
+            </section>
+            <section id="nombre-profesion">
+                <h1>KEVIN PERDOMO</h1>
+                <h2>Ingeniero Electronico</h2>
+            </section>
+        </header>
+
+        <section id="resumen-profesional">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nisi enim mollitia dolor, minima amet consectetur facilis eius repellat architecto nostrum. In ex a modi corrupti nulla recusandae eos minima.
+            </p>
+        </section>
+        <section id="cuerpo-hoja-de-vida">
+            <nav id="barra-navegacion">
+                <ul>
+                    <a onclick="mostrarInfo(0)">Habilidades</a>
+                    <a onclick="mostrarInfo(1)">Experiencia</a>
+                    <a onclick="mostrarInfo(2)">Educacion</a>
+                </ul>
+            </nav>
+            <div class="infoBarraNavegacion">
+                <p>Informacion habilidades</p>
+            </div>
+            <div class="infoBarraNavegacion">
+                <p>Informacion experiencia</p>
+            </div>
+            <div class="infoBarraNavegacion 2">
+                <p>Informacion educacion</p>
+            </div>
+        </section>
+
+        <footer>
+                
+        </footer>
+        <script>
+
+                var info= document.getElementsByClassName("infoBarraNavegacion");
+                var i;
+                for (i=0; i<info.length; i++){
+                    info[i].style.display= "none";
+                }
+                info[0].style.display= "block";
+
+            function mostrarInfo(indicadorInfo){
+                for (i=0; i<info.length; i++){
+                    info[i].style.display= "none";
+                }
+                info[indicadorInfo].style.display= "block";
+            }
+        </script>
     </body>
 </html>
