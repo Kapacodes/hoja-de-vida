@@ -4,14 +4,57 @@
         <title>Kevin Perdomo</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                max-width: 1000px;
+                margin: auto;
+                font-family: Montserrat, sans-serif;
+            }
+            header{
+                position: relative;
+                height: 200px;
+                
+            }
+            
+            .foto-perfil{
+                position: relative;                
+                width: 30%;
+                background-color: blue;
+            }
+
+            .nombre-profesion{
+                position: relative;
+                width: 70%;
+                background-color: aquamarine;
+            }
+
+            .flex-container-fila{
+                display: flex;
+                flex-direction: row;
+            }
+            @media (max-width:450px){
+                .flex-container-fila{
+                    margin-top: 20px;
+                    flex-direction: column;
+                }
+
+                .flex-container-fila>*{
+                    flex-basis: 100%;
+                }
+
+                .nombre-profesion{
+                    text-align: center;
+                }
+            }
+        </style>
     </head>
     <body>
-        <header>
-            <section id="foto-perfil">
+        <header class="flex-container-fila">
+            <section class="foto-perfil">
                 <!-- Foto de perfil -->
                 <h1>Aqui va la foto de perfil</h1>
             </section>
-            <section id="nombre-profesion">
+            <section class="nombre-profesion">
                 <h1>KEVIN PERDOMO</h1>
                 <h2>Ingeniero Electronico</h2>
             </section>
