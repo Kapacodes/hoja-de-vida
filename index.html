@@ -12,25 +12,36 @@
             }
             header{
                 position: relative;
-                height: 200px;
+                /*height: 300px;*/
                 
             }
             
             .foto-perfil{
                 position: relative;                
-                width: 30%;
-                background-color: blue;
+                width: 40%;
+                text-align: center;              
+            }
+
+            .foto-perfil img{
+                width: 250px;
             }
 
             .nombre-profesion{
                 position: relative;
-                width: 70%;
-                background-color: aquamarine;
+                width: 60%;
+            }
+
+            .nombre-profesion h1{
+                font-size: 50px;
+            }
+
+            .nombre-profesion h2{
+                font-size: 30px;
             }
 
             .flex-container-fila{
                 display: flex;
-                flex-direction: row;
+                flex-direction: row;                
             }
             @media (max-width:450px){
                 .flex-container-fila{
@@ -45,14 +56,41 @@
                 .nombre-profesion{
                     text-align: center;
                 }
+
+                .foto-perfil img{
+                width: 120px;
+                }
+                
+                .nombre-profesion h1{
+                font-size: 30px;
+                }
+
+                .nombre-profesion h2{
+                font-size: 20px;
+                }
+
+                .foto-perfil{
+                position: relative;                
+                width: 100%;
+                text-align: center;              
+                }
+
+                .nombre-profesion{
+                position: relative;
+                width: 100%;
+                }
+
+                header{
+                position: relative;
+                height: auto;
+                }
             }
         </style>
     </head>
     <body>
         <header class="flex-container-fila">
             <section class="foto-perfil">
-                <!-- Foto de perfil -->
-                <h1>Aqui va la foto de perfil</h1>
+                <img src="imagenes/foto1.png" alt="foto-perfil">
             </section>
             <section class="nombre-profesion">
                 <h1>KEVIN PERDOMO</h1>
